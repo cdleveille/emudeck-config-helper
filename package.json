@@ -1,0 +1,33 @@
+{
+  "name": "srm-parser-enable",
+  "version": "1.0.0",
+  "repository": "https://github.com/cdleveille/srm-parser-enable.git",
+  "author": "Chris Leveille <cdleveille@gmail.com>",
+  "license": "MIT",
+  "main": "build/index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx . && prettier --check .",
+    "format": "eslint --fix --ext .js,.jsx,.ts,.tsx . && prettier --write .",
+    "build": "tsc",
+    "start": "node .",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "release": "electron-packager --platform=linux --out=release ."
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "electron": "^22.1.0",
+    "electron-packager": "^17.1.1",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.3",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
