@@ -1,5 +1,6 @@
 node_modules/
 build/
 release/
+test/
 .env
 *.log
