@@ -1,7 +1,7 @@
 {
-  "name": "srm-parser-enable",
+  "name": "emudeck-config-helper",
   "version": "1.0.0",
-  "repository": "https://github.com/cdleveille/srm-parser-enable.git",
+  "repository": "https://github.com/cdleveille/emudeck-config-helper.git",
   "author": "Chris Leveille <cdleveille@gmail.com>",
   "license": "MIT",
   "main": "build/index.js",
@@ -9,9 +9,9 @@
     "prepare": "husky install",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx . && prettier --check .",
     "format": "eslint --fix --ext .js,.jsx,.ts,.tsx . && prettier --write .",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "build": "tsc",
     "start": "node .",
-    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "release": "electron-packager --platform=linux --out=release ."
   },
   "devDependencies": {

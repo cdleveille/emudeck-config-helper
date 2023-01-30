@@ -1,4 +1,4 @@
-# srm-parser-enable
+# emudeck-config-helper
 
 Enable only specific parsers in Steam ROM Manager to avoid getting duplicate non-Steam game shortcuts. Useful to run after an update which automatically re-enables all parsers.
 
@@ -33,5 +33,5 @@ Currently only the Steam Deck is supported.
 ```
 
 3. Download the latest release and extract it to anywhere on the Steam Deck.
-4. Mark the `srm-parser-enable` file as executable: Right-click > Properties > Permissions > Check the 'Is executable' checkbox > OK
-5. Double-click the `srm-parser-enable` file to run. Feel free to create a desktop shortcut for it if you prefer.
+4. Mark the `emudeck-config-helper` file as executable: Right-click > Properties > Permissions > Check the 'Is executable' checkbox > OK
+5. Double-click the `emudeck-config-helper` file to run. Feel free to create a desktop shortcut for it if you prefer.
