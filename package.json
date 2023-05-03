@@ -1,6 +1,6 @@
 {
   "name": "emudeck-config-helper",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "repository": "https://github.com/cdleveille/emudeck-config-helper.git",
   "author": "Chris Leveille <cdleveille@gmail.com>",
   "license": "MIT",
@@ -12,7 +12,7 @@
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "build": "tsc",
     "start": "node .",
-    "release": "electron-packager --platform=linux --out=release ."
+    "release": "electron-packager --overwrite --platform=linux --out=release ."
   },
   "devDependencies": {
     "@types/node": "^18.11.18",

@@ -2,7 +2,7 @@ import { readFileSync, writeFileSync } from "fs";
 import path from "path";
 
 import { Config } from "./config";
-import { ENCODING, Parser, SteamCategory, XENIA_FILE_PATH } from "./constants";
+import { ENCODING } from "./constants";
 
 import type { IParser } from "./types";
 
@@ -38,12 +38,6 @@ export const updateConfigFileData = (data: IParser[], enabledParsers: string[]) 
 		const updatedData = data.map(parser => {
 			const { configTitle, executable } = parser;
 			const disabled = !enabledParsers.includes(configTitle);
-			if (configTitle === Parser.XENIA) {
-				executable.path = XENIA_FILE_PATH;
-			}
-			if (configTitle === Parser.YUZU || configTitle === Parser.RYUJINX) {
-				parser.steamCategory = SteamCategory.SWITCH;
-			}
 			return { ...parser, disabled, executable } as IParser;
 		});
 		console.log("Parser config file data updated successfully.");
